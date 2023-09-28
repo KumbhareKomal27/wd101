@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<!--<style>
+  * {
+    margin: 0;
+    padding: 02;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+  body {
+    background-color:rgba(195, 220, 235, 0.884);
+  }
+  .head {
+    margin-top: 2rem;
+    /* color: white; */
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(119, 219, 110, 0.1);
+    padding: 50px;
+  }
+  .input {
+    padding: 10px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+
+  border{
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }  
+  label {
+    font-size: 18px;
+    letter-spacing: 1.4px;
+  }
+  .tableForm {
+    margin-top: 10px;
+  }
+  .btn {
+    background-color: rgba(0, 0, 0, 0.338);
+    color: rgba(223, 197, 197, 0.352);
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+  input:invalid:focus {
+    border: 2px solid red;
+  }
+
+  .table {
+    border: 2px solid black;
+    margin: 40px auto;
+  }
+
+  .td,
+  .th {
+    padding: 10px;
+    text-align: center;
+  }
+  form div input {
+width: auto;
+height: 40px;
+border-radius: 8px;
+outline: none;
+border: 2px solid #c4c4c4;
+padding: 0 30px;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+form div i {
+position: absolute;
+padding: 10px;
+margin-bottom: 15px;
+}
+  .subHead {
+    text-align: center;
+    margin-top: 2rem;
+  }
+@media (max-width: 425px) {
+form {
+padding: 20px;
+}
+}
+</style>
+-->
+<body class="container">  
+  <div class=" mt-5">
+     <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2>Registration Form</h2>
+                <form id="usr-frm" method="post">
+                  <div class="form-group">
+                      <label for="text">Name: </label>
+                      <input required type="text" id="name" name="name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email: </label>
+                      <input required type="email" id="email" name="email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label required for="password">Password: </label>
+                      <input required type="password" id="password" name="password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label for="dob">Date of Birth: </label>
+                      <input type="date" id="dob" name="dob">
+                  </div>
+                  <div class="form-group">
+                      <input type="checkbox" name="acceptTerms" id="acceptTerms" >
+                      <label for="acceptTerms">Accepted Terms & Conditions </label>
+                  </div>
+                  <button required class="btn btn-primary" type="submit">submit</button>
+                  
+              </form>
+              <div class="container mt-5">
+                    <h2>Details of Candidates</h2>
+                    <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+                </div>
+              <script src="index.js"></script>
+        </div>
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
